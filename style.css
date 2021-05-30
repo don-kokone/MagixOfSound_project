@@ -9,14 +9,271 @@ body {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: 'Space Mono', monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+}
+
 a {
   text-decoration: none;
+  color: #fcfcfc;
+}
+
+a:active {
+  color: #fcfcfc;
+}
+
+p {
+  font-size: 1rem;
+}
+
+main {
+  color: #fcfcfc;
+  background-color: #130e0e;
+  font-family: 'Space Mono', monospace;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
 }
 
 header {
-  height: 5rem;
   width: 100vw;
-  background-color: #2a2b2a;
+  background-color: #130e0e;
+  color: #fcfcfc;
   font-size: 2rem;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  overflow-y: scroll;
+}
+
+.navigation__logo {
+  text-transform: uppercase;
+}
+
+.navigation__logo a {
+  display: block;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background-color: #130e0e;
+  padding: 0.5rem 0rem;
+}
+
+.page-heading {
+  border-bottom: 3px solid #fcfcfc;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow-x: hidden;
+  margin-top: 1rem;
+}
+
+.event__date,
+.event__name,
+.event__location {
+  display: none;
+}
+
+.event__date--description,
+.event__name--description {
+  color: #196f9a;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.event__location--description {
+  color: #948d8d;
+}
+
+.news {
+  border-bottom: 1px solid #948d8d;
+  padding: 0.5rem 0rem;
+}
+
+.news__heading {
+  color: #196f9a;
+}
+
+.news__body {
+  color: #948d8d;
+}
+
+.home .main-content {
+  position: relative;
+}
+
+.home .main-content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  color: #130e0e;
+  text-transform: uppercase;
+}
+
+.home .main-content__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+}
+
+.home .main-content__form form input {
+  height: 2.5rem;
+  border: 2px solid #130e0e;
+  border-right: none;
+}
+
+.home .main-content__form form button {
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  color: #fcfcfc;
+  background-color: transparent;
+  border: 2px solid #130e0e;
+  border-radius: 0 10% 10% 0;
+  text-transform: uppercase;
+}
+
+.home .main-content__form form button:hover {
+  color: #130e0e;
+  background-color: #fcfcfc;
+}
+
+.home .main-content__img {
+  width: 100vw;
+  height: 75vh;
+}
+
+.home .main-content::before {
+  content: '';
+  background-color: #afafaf;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.home__text-section {
+  width: 90%;
+  margin: 2rem auto;
+  position: static;
+}
+
+.home__text-section h5 {
+  margin-bottom: 1rem;
+}
+
+.home__text-section p {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.events {
+  width: 90%;
+  margin: auto;
+}
+
+.events .event {
+  margin-top: 1rem;
+  border-bottom: 1px solid #948d8d;
+  padding-bottom: 1rem;
+}
+
+.news-section {
+  width: 90%;
+  margin: auto;
+}
+
+.music {
+  width: 90%;
+  margin: auto;
+}
+
+.contact {
+  width: 90%;
+  margin: auto;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form label {
+  font-size: 1rem;
+  margin: 0.7rem 0rem 0.5rem 0rem;
+}
+
+.contact form input {
+  height: 2rem;
+  max-width: 25rem;
+}
+
+.contact form textarea {
+  max-width: 35rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+.events {
+    width: 90%;
+    margin: auto;
+
+    .event {
+        margin-top: 1rem;
+        border-bottom: 1px solid $color-grey;
+        padding-bottom: 1rem;
+    }
+}

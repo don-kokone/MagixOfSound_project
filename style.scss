@@ -1,8 +1,25 @@
-@import "./Assets/01.Settings/settings-global";
-@import "./Assets/01.Settings/settings-colors";
+@import "./Assets/Code/01.Settings/settings-global";
+@import "./Assets/Code/01.Settings/setting-colors";
+@import "./Assets/Code/01.Settings/settings-fonts";
 
 
 
-@import "./Assets/04.Elements/elements-links";
+@import "./Assets/Code/04.Elements/elements-links";
+@import "./Assets/Code/04.Elements/elements-paragraphs";
+@import "./Assets/Code/04.Elements/elements-main";
+@import "./Assets/Code/04.Elements/elements-headings";
 
-@import "./Assets/06.Components/components-header";
+
+@import "./Assets/Code/06.Components/components-header";
+@import "./Assets/Code/06.Components/components-navigation";
+@import "./Assets/Code/06.Components/components-footer";
+@import "./Assets/Code/06.Components/components-page-heading" ;
+@import "./Assets/Code/06.Components/component-event-card";
+@import "./Assets/Code/06.Components/components_news-card";
+
+
+@import "./Assets/Code/Pages/home-page";
+@import "./Assets/Code/Pages/events-page";
+@import "./Assets/Code/Pages/news-page";
+@import "./Assets/Code/Pages/music-page";
+@import "./Assets/Code/Pages/contact-page";

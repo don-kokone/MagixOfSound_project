@@ -1,0 +1,19 @@
+.event__date,
+.event__name,
+.event__location {
+    display: none;
+}
+
+.event__date--description,
+.event__name--description {
+    color: $color-blue;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    
+
+}
+
+.event__location--description{
+color: $color-grey;
+
+}

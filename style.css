@@ -10,8 +10,8 @@ body {
 }
 
 @font-face {
-  font-family: 'Space Mono', monospace;
-  src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+  font-family: 'Oswald', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"');
 }
 
 a {
@@ -30,7 +30,8 @@ p {
 main {
   color: #fcfcfc;
   background-color: #130e0e;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5;
 }
 
 h1 {
@@ -43,6 +44,10 @@ h3 {
 
 h5 {
   font-size: 1.5rem;
+}
+
+li {
+  font-size: 0.9rem;
 }
 
 header {
@@ -94,6 +99,7 @@ header {
   width: 100vw;
   background-color: #130e0e;
   padding: 0.5rem 0rem;
+  z-index: 5;
 }
 
 .page-heading {
@@ -136,6 +142,37 @@ header {
   color: #948d8d;
 }
 
+.album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.album__cover {
+  max-width: 90vw;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.album__song-list {
+  margin-left: 1rem;
+}
+
+.album__song-list li {
+  margin-top: 3px;
+}
+
 .home .main-content {
   position: relative;
 }
@@ -157,7 +194,7 @@ header {
   text-align: center;
   position: absolute;
   z-index: 2;
-  top: 10%;
+  top: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
@@ -173,7 +210,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 2rem;
 }
 
 .home .main-content__form form input {
@@ -199,7 +235,7 @@ header {
 
 .home .main-content__img {
   width: 100vw;
-  height: 75vh;
+  height: 90vh;
 }
 
 .home .main-content::before {

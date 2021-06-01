@@ -1,0 +1,21 @@
+.album{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+
+    &__cover{
+        max-width: 90vw;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    &__song-list{
+        margin-left: 1rem;
+
+        li{
+            margin-top: 3px;
+        }
+    }
+}

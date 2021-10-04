@@ -1,0 +1,16 @@
+.social-icons {
+
+    @include standart-flex;
+
+
+    &__icon {
+        color: $color-white;
+
+        i {
+            font-size: 1.5rem;
+            margin: .5rem;
+        }
+
+
+    }
+}

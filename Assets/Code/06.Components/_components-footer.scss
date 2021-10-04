@@ -1,6 +1,5 @@
 .footer {
     background-color: $color-black;
-    margin-top: 1rem;
     border-top: 2px solid $color-white;
     @include standart-flex(column);
     text-transform: capitalize;
@@ -9,23 +8,6 @@
         text-align: center;
 
 
-    }
-
-    .social-icons {
-
-        @include standart-flex;
-
-
-        &__icon {
-            color: $color-white;
-
-            i {
-                font-size: 1.5rem;
-                margin: .5rem;
-            }
-
-
-        }
     }
 
     .creator-info {

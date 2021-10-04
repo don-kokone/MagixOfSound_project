@@ -1,16 +1,40 @@
-.navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    overflow-y: scroll;
+.navigation.active {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    border-top: 1px solid $color-white;
 
-    &__logo{
-        text-transform: uppercase;
 
-        a{
-            display: block;
+    ul {
+
+        position: absolute;
+        top: -20%;
+        right: 25%;
+        transform: translate(-50%, 50%);
+        background-color: $color-black;
+        @include standart-flex(column, space-around, center);
+
+
+        li {
+            padding-top: 3rem;
+
         }
+
     }
+
+    .social-icons {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-color: $color-black;
+    }
+
+
+
+
+}
+
+.navigation{
+    display: none;
 }

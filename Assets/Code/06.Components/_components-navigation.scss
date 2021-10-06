@@ -1,23 +1,28 @@
 .navigation.active {
+    display: flex;
     position: relative;
     width: 100vw;
-    height: 80vh;
+  
     border-top: 1px solid $color-white;
+
 
 
     ul {
 
         position: absolute;
+      
         top: -20%;
-        right: 25%;
+        left: 50%;
         transform: translate(-50%, 50%);
         background-color: $color-black;
         @include standart-flex(column, space-around, center);
+        padding-top: 5vh;
 
 
         li {
             padding-top: 3rem;
-
+            
+       
         }
 
     }
@@ -29,12 +34,8 @@
         transform: translate(-50%, 50%);
         background-color: $color-black;
     }
-
-
-
-
 }
 
 .navigation{
-    display: none;
+  display: none;
 }

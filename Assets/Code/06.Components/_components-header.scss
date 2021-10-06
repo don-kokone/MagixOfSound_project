@@ -1,5 +1,6 @@
 .header {
 
+
     width: 100vw;
     background-color: $color-black;
     color: $color-white;
@@ -9,11 +10,24 @@
     left: 0;
     z-index: 2;
 
-    &__logo {
-        text-transform: uppercase;
 
-        a {
-            display: block;
+    .logo-and-burger {
+
+        @include standart-flex(row, space-between, center);
+
+        .logo {
+
+            text-transform: uppercase;
+            margin-left: 1rem;
+
+            a {
+                display: block;
+            }
+        }
+
+        .burger-button{
+            margin-right: 1rem;
         }
     }
+
 }

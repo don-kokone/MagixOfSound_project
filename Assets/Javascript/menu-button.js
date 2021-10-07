@@ -1,26 +1,27 @@
 const menu = () => {
 
-const nav = document.querySelector(".navigation");
-const burger = document.querySelector(".burger-button");
+    const nav = document.querySelector(".navigation");
+    const burger = document.querySelector(".burger-button");
+    const menuLink = document.querySelectorAll(".menu-link");
 
-burger.addEventListener("click", ()=>{
 
-    nav.classList.toggle("active")
 
-})};
+    menuLink.forEach(element => {
+        element.addEventListener("click", () => {
+
+            nav.classList.remove("active")
+        })
+
+    });
+
+
+
+
+    burger.addEventListener("click", () => {
+
+        nav.classList.toggle("active")
+
+    })
+};
 
 menu();
-
-
-const navElement = document.getElementById("navigation")
-const header = document.querySelector(".header")
-const main = document.querySelector("main")
-
-navElement.style.height = window.screen.height - header.offsetHeight + "px";
-
-
-
-
-
-
-

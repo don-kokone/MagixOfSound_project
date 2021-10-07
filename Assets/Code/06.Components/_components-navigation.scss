@@ -1,16 +1,14 @@
 .navigation.active {
     display: flex;
     position: relative;
+    top: 0;
+    left: 0;
     width: 100vw;
-  
     border-top: 1px solid $color-white;
-
-
 
     ul {
 
         position: absolute;
-      
         top: -20%;
         left: 50%;
         transform: translate(-50%, 50%);
@@ -37,5 +35,5 @@
 }
 
 .navigation{
-  display: none;
+ display: none;
 }
